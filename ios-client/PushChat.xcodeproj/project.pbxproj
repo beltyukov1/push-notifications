@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA930B3F1A1E449800B81D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA930B3E1A1E449800B81D07 /* AppDelegate.swift */; };
+		FA930B411A1E449800B81D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA930B401A1E449800B81D07 /* ViewController.swift */; };
+		FA930B441A1E449800B81D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA930B421A1E449800B81D07 /* Main.storyboard */; };
+		FA930B461A1E449800B81D07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA930B451A1E449800B81D07 /* Images.xcassets */; };
+		FA930B491A1E449800B81D07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA930B471A1E449800B81D07 /* LaunchScreen.xib */; };
+		FA930B551A1E449800B81D07 /* PushChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA930B541A1E449800B81D07 /* PushChatTests.swift */; };
+		FA930B751A1E4F3000B81D07 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA930B6D1A1E4EBB00B81D07 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA930B771A1E4F4900B81D07 /* WebServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA930B761A1E4F4900B81D07 /* WebServiceApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA930B4F1A1E449800B81D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA930B311A1E449800B81D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA930B381A1E449800B81D07;
+			remoteInfo = PushChat;
+		};
+		FA930B6C1A1E4EBB00B81D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA930B671A1E4EBB00B81D07 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		FA930B6E1A1E4EBB00B81D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA930B671A1E4EBB00B81D07 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		FA930B721A1E4F0A00B81D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA930B671A1E4EBB00B81D07 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA930B741A1E4F1800B81D07 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA930B751A1E4F3000B81D07 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA930B391A1E449800B81D07 /* PushChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA930B3D1A1E449800B81D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA930B3E1A1E449800B81D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA930B401A1E449800B81D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA930B431A1E449800B81D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA930B451A1E449800B81D07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA930B481A1E449800B81D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FA930B4E1A1E449800B81D07 /* PushChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA930B531A1E449800B81D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA930B541A1E449800B81D07 /* PushChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushChatTests.swift; sourceTree = "<group>"; };
+		FA930B671A1E4EBB00B81D07 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		FA930B761A1E4F4900B81D07 /* WebServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA930B361A1E449800B81D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA930B4B1A1E449800B81D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA930B301A1E449800B81D07 = {
+			isa = PBXGroup;
+			children = (
+				FA930B671A1E4EBB00B81D07 /* Alamofire.xcodeproj */,
+				FA930B3B1A1E449800B81D07 /* PushChat */,
+				FA930B511A1E449800B81D07 /* PushChatTests */,
+				FA930B3A1A1E449800B81D07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA930B3A1A1E449800B81D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA930B391A1E449800B81D07 /* PushChat.app */,
+				FA930B4E1A1E449800B81D07 /* PushChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA930B3B1A1E449800B81D07 /* PushChat */ = {
+			isa = PBXGroup;
+			children = (
+				FA930B3E1A1E449800B81D07 /* AppDelegate.swift */,
+				FA930B401A1E449800B81D07 /* ViewController.swift */,
+				FA930B421A1E449800B81D07 /* Main.storyboard */,
+				FA930B451A1E449800B81D07 /* Images.xcassets */,
+				FA930B471A1E449800B81D07 /* LaunchScreen.xib */,
+				FA930B3C1A1E449800B81D07 /* Supporting Files */,
+				FA930B761A1E4F4900B81D07 /* WebServiceApi.swift */,
+			);
+			path = PushChat;
+			sourceTree = "<group>";
+		};
+		FA930B3C1A1E449800B81D07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA930B3D1A1E449800B81D07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA930B511A1E449800B81D07 /* PushChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA930B541A1E449800B81D07 /* PushChatTests.swift */,
+				FA930B521A1E449800B81D07 /* Supporting Files */,
+			);
+			path = PushChatTests;
+			sourceTree = "<group>";
+		};
+		FA930B521A1E449800B81D07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA930B531A1E449800B81D07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA930B681A1E4EBB00B81D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA930B6D1A1E4EBB00B81D07 /* Alamofire.framework */,
+				FA930B6F1A1E4EBB00B81D07 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA930B381A1E449800B81D07 /* PushChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA930B581A1E449800B81D07 /* Build configuration list for PBXNativeTarget "PushChat" */;
+			buildPhases = (
+				FA930B351A1E449800B81D07 /* Sources */,
+				FA930B361A1E449800B81D07 /* Frameworks */,
+				FA930B371A1E449800B81D07 /* Resources */,
+				FA930B741A1E4F1800B81D07 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA930B731A1E4F0A00B81D07 /* PBXTargetDependency */,
+			);
+			name = PushChat;
+			productName = PushChat;
+			productReference = FA930B391A1E449800B81D07 /* PushChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA930B4D1A1E449800B81D07 /* PushChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA930B5B1A1E449800B81D07 /* Build configuration list for PBXNativeTarget "PushChatTests" */;
+			buildPhases = (
+				FA930B4A1A1E449800B81D07 /* Sources */,
+				FA930B4B1A1E449800B81D07 /* Frameworks */,
+				FA930B4C1A1E449800B81D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA930B501A1E449800B81D07 /* PBXTargetDependency */,
+			);
+			name = PushChatTests;
+			productName = PushChatTests;
+			productReference = FA930B4E1A1E449800B81D07 /* PushChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA930B311A1E449800B81D07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alex Beltyukov";
+				TargetAttributes = {
+					FA930B381A1E449800B81D07 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = VBGLSMB46S;
+					};
+					FA930B4D1A1E449800B81D07 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FA930B381A1E449800B81D07;
+					};
+				};
+			};
+			buildConfigurationList = FA930B341A1E449800B81D07 /* Build configuration list for PBXProject "PushChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA930B301A1E449800B81D07;
+			productRefGroup = FA930B3A1A1E449800B81D07 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA930B681A1E4EBB00B81D07 /* Products */;
+					ProjectRef = FA930B671A1E4EBB00B81D07 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FA930B381A1E449800B81D07 /* PushChat */,
+				FA930B4D1A1E449800B81D07 /* PushChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA930B6D1A1E4EBB00B81D07 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = FA930B6C1A1E4EBB00B81D07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA930B6F1A1E4EBB00B81D07 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = FA930B6E1A1E4EBB00B81D07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA930B371A1E449800B81D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA930B441A1E449800B81D07 /* Main.storyboard in Resources */,
+				FA930B491A1E449800B81D07 /* LaunchScreen.xib in Resources */,
+				FA930B461A1E449800B81D07 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA930B4C1A1E449800B81D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA930B351A1E449800B81D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA930B771A1E4F4900B81D07 /* WebServiceApi.swift in Sources */,
+				FA930B411A1E449800B81D07 /* ViewController.swift in Sources */,
+				FA930B3F1A1E449800B81D07 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA930B4A1A1E449800B81D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA930B551A1E449800B81D07 /* PushChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA930B501A1E449800B81D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA930B381A1E449800B81D07 /* PushChat */;
+			targetProxy = FA930B4F1A1E449800B81D07 /* PBXContainerItemProxy */;
+		};
+		FA930B731A1E4F0A00B81D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = FA930B721A1E4F0A00B81D07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA930B421A1E449800B81D07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA930B431A1E449800B81D07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA930B471A1E449800B81D07 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA930B481A1E449800B81D07 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA930B561A1E449800B81D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA930B571A1E449800B81D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA930B591A1E449800B81D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PushChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FA930B5A1A1E449800B81D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PushChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		FA930B5C1A1E449800B81D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PushChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushChat.app/PushChat";
+			};
+			name = Debug;
+		};
+		FA930B5D1A1E449800B81D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PushChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushChat.app/PushChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA930B341A1E449800B81D07 /* Build configuration list for PBXProject "PushChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA930B561A1E449800B81D07 /* Debug */,
+				FA930B571A1E449800B81D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA930B581A1E449800B81D07 /* Build configuration list for PBXNativeTarget "PushChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA930B591A1E449800B81D07 /* Debug */,
+				FA930B5A1A1E449800B81D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA930B5B1A1E449800B81D07 /* Build configuration list for PBXNativeTarget "PushChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA930B5C1A1E449800B81D07 /* Debug */,
+				FA930B5D1A1E449800B81D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA930B311A1E449800B81D07 /* Project object */;
+}
