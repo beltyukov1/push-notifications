@@ -24,7 +24,7 @@ class WebServiceApi {
         Alamofire
             .request(
                 .POST,
-                basePath + "/registration",
+                basePath + "/registrations",
                 parameters: postBody,
                 encoding: .JSON)
             .response { (request, response, data, error) in

@@ -7,12 +7,15 @@ This repository is a spike of push notifications. It contains the following proj
 
 #Push notifications service
 Web service (written in Grails) that talks to Microsoft Azure Notification Hub to achieve the following:
-- Register devices for push notifications (Android and iOS)
-- Send push notifications (Android and iOS)
+- Register devices for push notifications
+- Send push notifications
 - Delete registrations
+This service utilizes a Java wrapper around the REST interface provided by Microsoft. It also contains a class (AzureNoSdkService.groovy) which registers devices and sends push notifications without the use of the Notification Hub SDK.
 
 #Android client
-Sample Android application that registers with Google (Google Cloud Messaging) and sends registration ID to Azure via push notifications service.
+Android application that registers with Google (Google Cloud Messaging (GCM)) and sends registration ID to Azure via push notifications service.
+This application is also able to receive and display notifications sent by Azure Notification Hub (via GCM).
 
 #iOS client
-Sample iOS application that registers with Apple (Apple Push Notifications Service) and sends registration ID to Azure via push notifications service.
+iOS application that registers with Apple (Apple Push Notifications Service (APNS)) and sends registration ID to Azure via push notifications service.
+This application is also able to receive and display notifications sent by Azure Notification Hub (via APNS).
